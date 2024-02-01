@@ -1,0 +1,56 @@
+//**+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+//**+*+*+*+*  Media-Query Manager *+*+*+*+*+*/
+//**+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+/*
+750px - 900px:  large
+610px - 750px:  tab-quer
+460 - 610px:    medium
+0 - 460px:      small
+
+$breakpoint Argument auswahl:
+- large     = 900px / 16px  => 56.25em
+- tab-quer  = 750px / 16px  => 46.87em
+- medium    = 610   / 16px  => 38.1em
+- small     = 460px / 16px  => 28.75em
+*/
+@mixin responsive($breakpoint) {
+  @if $breakpoint == large {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-quer {
+    @media only screen and (max-width: 46.87em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 38.1em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small {
+    @media only screen and (max-width: 28.75em) {
+      @content;
+    }
+  }
+}
+
+//*?-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+@mixin linkBackgroundMove($origin, $axis) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: color(color-primary);
+  transform: scale#{$axis }(0);
+  transform-origin: $origin;
+  transition: transform 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: -1;
+}

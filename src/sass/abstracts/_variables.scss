@@ -1,0 +1,22 @@
+//* === COLOR-MANAGER ===
+$colors: (
+  "color-primary": #014d4e,
+  "color-secondary": #ff9408,
+  "color-secondary-dark": #ff94088e,
+  "color-tertiary": #017374,
+  "color-tertiary-dark": #01727498,
+  "color-white": #fff,
+  "color-black": #000,
+);
+
+$reeed: red;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//*?-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+//* === SIZE ===
+$icon-size: min(1.5rem + 1vw, 3rem);
+$nav-height: min(3.5rem + 2vw, 6rem);

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Alibey Özkan, Frontend und Backendentwicklung"
+    />
+    <title>Alibey &mdash; Webentwickler</title>
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+
+    <!-- === JavaScript === -->
+    <script src="src/js/script.js" defer></script>
+  </head>
+  <body>
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR SIDEBAR *-*-*-*-*-*-*-*-*-->
+    <aside class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__logo">
+          <picture>
+            <source srcset="src/img/logo-img.webp" type="image/webp" />
+            <source srcset="src/img/logo-img.jpg" type="image/jpg" />
+
+            <img src="src/img/logo-img.jpg" alt="Alibey Özkan" />
+          </picture>
+        </div>
+
+        <ul class="sidebar__socials">
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100013521489048"
+              class="sidebar__link"
+              style="--clr: #3b5998"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <svg class="sidebar__icon">
+                <use href="src/img/icons/sprite.svg#icon-facebook" />
+              </svg>
+
+              <div class="sidebar__icon-box">
+                <svg class="sidebar__icon--pseudo">
+                  <use href="src/img/icons/sprite.svg#icon-facebook" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZGUifQ%3D%3D%22%7D"
+              class="sidebar__link"
+              style="--clr: #1da1f2"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <svg class="sidebar__icon">
+                <use href="src/img/icons/sprite.svg#icon-twitter" />
+              </svg>
+
+              <div class="sidebar__icon-box">
+                <svg class="sidebar__icon--pseudo">
+                  <use href="src/img/icons/sprite.svg#icon-twitter" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/aliozkan693/"
+              class="sidebar__link"
+              style="--clr: #dd2a7b"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg class="sidebar__icon">
+                <use href="src/img/icons/sprite.svg#icon-instagram" />
+              </svg>
+
+              <div class="sidebar__icon-box">
+                <svg class="sidebar__icon--pseudo">
+                  <use href="src/img/icons/sprite.svg#icon-instagram" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              class="sidebar__link"
+              style="--clr: #ff0000"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <svg class="sidebar__icon">
+                <use href="src/img/icons/sprite.svg#icon-youtube" />
+              </svg>
+
+              <div class="sidebar__icon-box">
+                <svg class="sidebar__icon--pseudo">
+                  <use href="src/img/icons/sprite.svg#icon-youtube" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/oezkan55"
+              class="sidebar__link"
+              style="--clr: #171515"
+              target="_blank"
+              aria-label="Github"
+            >
+              <svg class="sidebar__icon">
+                <use href="src/img/icons/sprite.svg#icon-github" />
+              </svg>
+
+              <div class="sidebar__icon-box">
+                <svg class="sidebar__icon--pseudo">
+                  <use href="src/img/icons/sprite.svg#icon-github" />
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR HEADER *-*-*-*-*-*-*-*-*-->
+    <header class="header">
+      <!--* === Navigation === -->
+      <nav class="navigation">
+        <div class="navigation__hamburger">
+          <div class="navigation__hamburger-line line--1"></div>
+          <div class="navigation__hamburger-line line--2"></div>
+          <div class="navigation__hamburger-line line--3"></div>
+        </div>
+
+        <ul class="navigation__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">Über Mich</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!--*=== Header-Content === -->
+      <div class="header__content">
+        <div class="header__card">
+          <h1 class="heading-primary">Alibey Özkan</h1>
+          <a
+            href="https://github.com/oezkan55"
+            class="header__content-link"
+            target="_blank"
+            >Ich Lerne</a
+          >
+          <p class="paragraph">Frontend / Backend Developer</p>
+        </div>
+      </div>
+    </header>
+
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR SKILLS *-*-*-*-*-*-*-*-*-->
+    <section class="skills u-sec-padding-resp" id="skills">
+      <h2 class="heading-secondary">Skills</h2>
+
+      <div class="skill">
+        <h3 class="heading-tertiary">HTML / CSS</h3>
+        <div class="skill__progress">
+          <span class="skill__progress--1"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3 class="heading-tertiary">JavaScript</h3>
+        <div class="skill__progress">
+          <span class="skill__progress--2"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3 class="heading-tertiary">PHP</h3>
+        <div class="skill__progress">
+          <span class="skill__progress--3"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3 class="heading-tertiary">MySQL</h3>
+        <div class="skill__progress">
+          <span class="skill__progress--4"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3 class="heading-tertiary">Git</h3>
+        <div class="skill__progress">
+          <span class="skill__progress--5"></span>
+        </div>
+      </div>
+    </section>
+
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR ABOUT-ME *-*-*-*-*-*-*-*-*-->
+    <section class="about-me u-sec-padding-resp" id="about">
+      <div class="about-me__img">
+        <picture>
+          <source srcset="src/img/about-img.webp" type="image/webp" />
+          <source srcset="src/img/about-img.jpg" type="image/jpg" />
+
+          <img src="src/img/about-img.jpg" alt="Alibey Özkan" />
+        </picture>
+      </div>
+      <div class="about-me__content">
+        <h2 class="heading-secondary">Über mich</h2>
+        <p class="paragraph">
+          Ich habe vor 1,5 Jahren beschlossen die Webentwicklung zu erlernen.
+          Seitdem arbeite ich daran meine Fähigkeiten stetig zu verbessern und
+          mir immer bessere Skills anzueignen
+        </p>
+        <p class="paragraph u-negative-margin-top">
+          Mein Ziel ist es, <span><strong>SIE</strong></span> als Profesioneller
+          Frontend- oder Backend-Enwickler zu unterstützen
+        </p>
+        <a
+          href="https://github.com/oezkan55?tab=repositories"
+          class="about-me__link"
+          target="_blank"
+          >Lese mehr</a
+        >
+      </div>
+    </section>
+
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR PROJECTS *-*-*-*-*-*-*-*-*-->
+    <section id="projects" class="projects u-sec-padding-resp">
+      <a
+        href="https://vokabeltrainer-alibey.netlify.app"
+        class="project"
+        target="_blank"
+      >
+        <img
+          src="src/img/project-1.jpg"
+          alt="Vokabeltrainer"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3 class="heading-tertiary">Vokabeltrainer</h3>
+          <p class="paragraph">
+            Erstelle deine eigenen Vokabeln und lerne mit Ihnen
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="https://to-do-liste-alibey.netlify.app"
+        class="project"
+        target="_blank"
+      >
+        <img
+          src="src/img/project-2.jpg"
+          alt="To-do-liste"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3 class="heading-tertiary">To-do-Liste</h3>
+          <p class="paragraph">Vergesse keine noch offene Abeiten</p>
+        </div>
+      </a>
+
+      <a
+        href="https://stein-schere-papier-alibey.netlify.app"
+        class="project"
+        target="_blank"
+      >
+        <img
+          src="src/img/project-3.png"
+          alt="Schere Stein Papier"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3 class="heading-tertiary">Schere, Stein, Papier</h3>
+          <p class="paragraph">
+            Spiele eine Runde Schere, Stein, Papier und Echse Spock😁
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="https://color-switcher-alibey.netlify.app/"
+        class="project"
+        target="_blank"
+      >
+        <img
+          src="src/img/project-4.jpg"
+          alt="Wettersymbol"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3 class="heading-tertiary">Color Switcher</h3>
+          <p class="paragraph">
+            Schaue dir das Aktuelle Wetter auf der ganzen Welt an
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="https://waehrungsrechner-alibey.netlify.app"
+        class="project"
+        target="_blank"
+      >
+        <img
+          src="src/img/project-5.jpg"
+          alt="Währungsrechner"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3 class="heading-tertiary">Währungsrechner</h3>
+          <p class="paragraph">Lass dir die Aktuellen Währungen umrechnen</p>
+        </div>
+      </a>
+
+      <a
+        href="https://github.com/oezkan55/PHP-Gaestebuch"
+        class="project"
+        target="_blank"
+      >
+        <img src="src/img/project-6.jpg" alt="Gästebuch" class="project__img" />
+        <div class="project__description">
+          <h3 class="heading-tertiary">Gästebuch</h3>
+          <p class="paragraph">Lege ein eigenes Backend Gästebuch an</p>
+        </div>
+      </a>
+    </section>
+
+    <!--? *-*-*-*-*-*-*-*-*-*!ANCHOR FOOTER *-*-*-*-*-*-*-*-*-->
+    <footer id="contact" class="footer u-sec-padding-resp">
+      <div class="footer__contact">
+        <p class="paragraph">Kontakt:</p>
+        <p class="footer__data">+4915208396661</p>
+        <p class="footer__data">alibeyoezkan@googlemail.com</p>
+      </div>
+
+      <div class="footer__icons">
+        <a href="tel:+4915208396661" class="footer__icon-contact" title="anruf">
+          <svg>
+            <use href="src/img/icons/sprite.svg#icon-phone" />
+          </svg>
+        </a>
+        <a
+          href="mailto:alibeyoezkan@googlemail.com"
+          class="footer__icon-contact"
+          title="email"
+        >
+          <svg>
+            <use href="src/img/icons/sprite.svg#icon-email" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!--?=== Damit "touch" Funktionalität auf Iphone/Mac funktioniert  ===-->
+    <script defer>
+      document.addEventListener("touchstart", function () {}, true);
+    </script>
+  </body>
+</html>

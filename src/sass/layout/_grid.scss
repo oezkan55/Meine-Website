@@ -1,0 +1,10 @@
+body {
+  display: grid;
+  grid-template-rows: 100vh repeat(4, min-content);
+  grid-template-columns:
+    [full-start] 1fr [sidebar-start] min-content [sidebar-end] repeat(
+      6,
+      [col-start] minmax(min-content, 23.3rem) [col-end]
+    )
+    1fr [full-end];
+}

@@ -1,0 +1,93 @@
+//*?+*+*+*+====== !ANCHOR SKILLS Section =====+*+*+*+*/
+.skills {
+  background-color: color(color-tertiary);
+
+  grid-column: col-start 1 / col-end 6;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  .heading-secondary {
+    color: color(color-black);
+  }
+}
+
+//*?+*+*+*+====== !ANCHOR ABOUT-ME Section =====+*+*+*+*/
+.about-me {
+  background-color: color("color-secondary");
+
+  grid-column: col-start 1 / col-end 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.4rem;
+
+  &__img {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 1.2rem;
+
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: color(color-primary);
+      width: 10%;
+    }
+  }
+
+  .paragraph {
+    color: color(color-tertiary);
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: color(color-white);
+    @extend %link;
+
+    align-self: flex-start;
+
+    &::before {
+      @include linkBackgroundMove(bottom, Y);
+    }
+  }
+
+  &__link:hover::before,
+  &__link:active::before {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+//*?+*+*+*+====== !ANCHOR PROJECTS Section =====+*+*+*+*/
+.projects {
+  background-color: color(color-secondary-dark);
+
+  grid-column: col-start 1 / col-end 6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 6.4rem;
+
+  @include responsive(small) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}

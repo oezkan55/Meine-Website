@@ -1,0 +1,58 @@
+.footer {
+  background-color: color(color-primary);
+
+  grid-column: col-start 1 / col-end 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__contact {
+    .paragraph {
+      font-size: 3rem;
+    }
+  }
+
+  &__data {
+    color: color(color-white);
+    font-size: 2.4rem;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  &__icon-contact svg {
+    fill: color(color-secondary);
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+
+  @include responsive(large) {
+    justify-content: space-between;
+
+    .paragraph {
+      font-size: 2rem;
+    }
+
+    &__data {
+      font-size: 1.4rem;
+    }
+
+    &__icon-contact svg {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+
+  @include responsive(small) {
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: flex-start;
+  }
+}
